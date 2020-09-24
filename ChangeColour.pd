@@ -1,0 +1,422 @@
+#N canvas -8 -8 1366 685 12;
+#X floatatom 82 251 3 0 29 0 - - -;
+#X floatatom 187 256 3 0 29 0 - - -;
+#X text 180 231 label;
+#X obj 187 282 t b f;
+#X msg 82 350 color \$1 \$2 \$3;
+#X text 191 350 presets;
+#X symbolatom 485 347 9 0 0 0 - - -;
+#N canvas -8 -8 1366 685 label 0;
+#X obj 174 256 t b f;
+#X obj 124 80 vsl 15 128 1 0 0 0 empty empty empty 0 -9 0 10 -1 -262144
+-1 0 1;
+#X obj 102 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -8256
+-262144 -1 11206 1;
+#X obj 109 250 t b f;
+#X obj 81 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4033
+-1 -1 11206 1;
+#X obj 61 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -258049
+-1 -1 11206 1;
+#X obj 81 275 t b f;
+#X obj 221 282 makefilename %02x;
+#X obj 141 309 makefilename %02x;
+#X obj 61 346 makefilename %02x;
+#X obj 61 428 outlet;
+#X msg 61 405 symbol #\$1\$2\$3;
+#X obj 176 29 loadbang;
+#X obj 176 176 route set;
+#X obj 61 376 pack symbol symbol symbol;
+#X obj 300 72 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X msg 176 91 set 225;
+#X obj 176 60 t b b;
+#X obj 115 222 *;
+#X obj 81 222 *;
+#X obj 61 320 *;
+#X msg 239 91 1;
+#X text 52 56 label;
+#X connect 0 0 18 0;
+#X connect 0 0 19 0;
+#X connect 0 0 20 0;
+#X connect 0 1 18 1;
+#X connect 0 1 19 1;
+#X connect 0 1 20 1;
+#X connect 1 0 0 0;
+#X connect 2 0 18 0;
+#X connect 3 0 4 0;
+#X connect 3 1 7 0;
+#X connect 4 0 19 0;
+#X connect 5 0 20 0;
+#X connect 6 0 5 0;
+#X connect 6 1 8 0;
+#X connect 7 0 14 2;
+#X connect 8 0 14 1;
+#X connect 9 0 14 0;
+#X connect 11 0 10 0;
+#X connect 12 0 17 0;
+#X connect 13 0 7 0;
+#X connect 13 0 8 0;
+#X connect 14 0 11 0;
+#X connect 16 0 5 0;
+#X connect 16 0 4 0;
+#X connect 16 0 2 0;
+#X connect 16 0 13 0;
+#X connect 17 0 21 0;
+#X connect 17 1 16 0;
+#X connect 18 0 3 0;
+#X connect 19 0 6 0;
+#X connect 20 0 9 0;
+#X connect 21 0 1 0;
+#X coords 0 -1 1 1 100 170 2 50 50;
+#X restore 485 165 pd label;
+#X symbolatom 345 346 9 0 0 0 - - -;
+#N canvas -8 -8 1366 685 label 0;
+#X obj 174 256 t b f;
+#X obj 124 80 vsl 15 128 1 0 0 0 empty empty empty 0 -9 0 10 -1 -262144
+-1 0 1;
+#X obj 102 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -8256
+-262144 -1 11206 1;
+#X obj 109 250 t b f;
+#X obj 81 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4033
+-1 -1 11206 1;
+#X obj 61 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -258049
+-1 -1 11206 1;
+#X obj 81 275 t b f;
+#X obj 221 282 makefilename %02x;
+#X obj 141 309 makefilename %02x;
+#X obj 61 346 makefilename %02x;
+#X obj 61 428 outlet;
+#X text 52 56 background;
+#X msg 61 405 symbol #\$1\$2\$3;
+#X obj 176 29 loadbang;
+#X obj 176 176 route set;
+#X obj 61 376 pack symbol symbol symbol;
+#X obj 300 72 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X msg 176 91 set 225;
+#X obj 176 60 t b b;
+#X obj 115 222 *;
+#X obj 81 222 *;
+#X obj 61 320 *;
+#X symbolatom 267 214 10 0 0 0 - - -;
+#X msg 239 90 1;
+#X connect 0 0 19 0;
+#X connect 0 0 20 0;
+#X connect 0 0 21 0;
+#X connect 0 1 19 1;
+#X connect 0 1 20 1;
+#X connect 0 1 21 1;
+#X connect 1 0 0 0;
+#X connect 2 0 19 0;
+#X connect 3 0 4 0;
+#X connect 3 1 7 0;
+#X connect 4 0 20 0;
+#X connect 5 0 21 0;
+#X connect 6 0 5 0;
+#X connect 6 1 8 0;
+#X connect 7 0 15 2;
+#X connect 8 0 15 1;
+#X connect 9 0 15 0;
+#X connect 12 0 10 0;
+#X connect 12 0 22 0;
+#X connect 13 0 18 0;
+#X connect 14 0 7 0;
+#X connect 14 0 8 0;
+#X connect 15 0 12 0;
+#X connect 17 0 5 0;
+#X connect 17 0 4 0;
+#X connect 17 0 2 0;
+#X connect 17 0 14 0;
+#X connect 18 0 23 0;
+#X connect 18 1 17 0;
+#X connect 19 0 3 0;
+#X connect 20 0 6 0;
+#X connect 21 0 9 0;
+#X connect 23 0 1 0;
+#X coords 0 -1 1 1 100 170 2 50 50;
+#X restore 345 165 pd label;
+#X obj 485 377 t b s;
+#X obj 267 231 loadbang;
+#X obj 345 415 pack symbol symbol symbol;
+#X msg 345 444 color \$1 \$2 \$3;
+#X text 72 231 background;
+#X text 454 445 RGB in hexadecimal;
+#X text 71 164 Open subpatches for the conversion from RGB to hexadecimal
+============>, f 38;
+#X obj 193 540 cnv 15 200 60 empty \$0-colors Label 35 30 0 40 -1 -1
+0;
+#X obj 345 481 send \$0-colors;
+#X msg 267 270 list #e1e1e1 #000000 #000000, f 7;
+#X obj 82 313 pack 1 22 22, f 20;
+#N canvas 755 128 818 419 old-behaviour 0;
+#X floatatom 395 117 3 0 29 0 - - -;
+#X floatatom 500 122 3 0 29 0 - - -;
+#X text 493 97 label;
+#X obj 500 158 t b f;
+#X msg 395 226 color \$1 \$2 \$3;
+#X text 393 97 background;
+#X obj 496 320 cnv 15 200 60 empty \$0-old-behaviour Label 35 30 0
+40 -233017 -1 0;
+#X obj 395 266 send \$0-old-behaviour;
+#X floatatom 600 116 3 0 29 0 - - -;
+#X floatatom 705 121 3 0 29 0 - - -;
+#X text 698 96 label;
+#X obj 705 157 t b f;
+#X text 590 96 background;
+#X obj 600 265 send \$0-old-behaviour;
+#X obj 600 188 pack 1 22, f 20;
+#X msg 600 225 color \$1 \$2;
+#X text 48 302 Old "compatible" behavior, f 16;
+#X text 215 306 New "correct" behavior;
+#X msg 37 339 \; pd compatibility 0.46;
+#X msg 219 339 \; pd compatibility 0.47;
+#X text 22 110 Since Pd version 0.47 \, you cannot use the color message
+with only 2 values \, as the 2nd value just gets ignored. You need
+to have 3 values where the third sets the label color., f 46;
+#X text 22 168 You can use the "pd compatibility" message to get the
+old behavior back., f 46;
+#X text 22 201 Note that this is valid for all ways of using the color
+message (including the new way of using hexadecimal notation introduced
+in Pd 0.47) \, but in this example we're just using the "presets" option
+for convenience., f 46;
+#X text 410 29 When the compatibility is set to 0.47 or higher \, the
+example below to the right doesn't work to set the label color., f
+48;
+#X text 22 37 Until Pd version 0.46 \, you could have a color message
+with only two values \, where the second value would set the label
+color. You could also have 3 values \, where the 2nd value was ignored
+and the 3rd value would set the color., f 46;
+#X text 692 226 <= Pd 0.46 way;
+#X obj 408 147 loadbang;
+#X obj 395 189 pack 10 0 22, f 20;
+#X connect 0 0 27 0;
+#X connect 1 0 3 0;
+#X connect 3 0 27 0;
+#X connect 3 1 27 2;
+#X connect 4 0 7 0;
+#X connect 8 0 14 0;
+#X connect 9 0 11 0;
+#X connect 11 0 14 0;
+#X connect 11 1 14 1;
+#X connect 14 0 15 0;
+#X connect 15 0 13 0;
+#X connect 26 0 27 0;
+#X connect 27 0 4 0;
+#X restore 467 590 pd old-behaviour;
+#X text 435 523 COMPATIBILITY NOTE: The behavior changed in Pd 0.47!
+Check details and how to get it back:, f 23;
+#N canvas 720 84 576 472 old_way 0;
+#N canvas 1004 177 402 495 label 0;
+#X obj 102 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -8256
+-262144 -1 0 1;
+#X obj 81 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4033
+-1 -1 0 1;
+#X obj 61 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -258049
+-1 -1 0 1;
+#X text 66 56 label;
+#X obj 59 361 expr -($f1 * 65536 + $f2 * 256 + $f3 + 1);
+#X obj 311 319 t b f;
+#X obj 169 319 t b f;
+#X obj 59 413 outlet;
+#X connect 0 0 5 0;
+#X connect 1 0 6 0;
+#X connect 2 0 4 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 0;
+#X connect 5 1 4 2;
+#X connect 6 0 4 0;
+#X connect 6 1 4 1;
+#X coords 0 -1 1 1 80 170 2 50 50;
+#X restore 335 137 pd label;
+#X text 228 112 Set RGB values in the sliders;
+#N canvas 828 139 516 513 label 0;
+#X obj 102 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -8256
+-262144 -1 11206 1;
+#X obj 81 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4033
+-1 -1 11206 1;
+#X obj 61 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -258049
+-1 -1 11206 1;
+#X obj 61 361 expr -($f1 * 65536 + $f2 * 256 + $f3 + 1);
+#X obj 313 269 t b f;
+#X obj 171 269 t b f;
+#X obj 61 413 outlet;
+#X text 52 56 background;
+#X obj 180 83 loadbang;
+#X msg 202 134 set 225;
+#X msg 181 195 225 225 225;
+#X connect 0 0 4 0;
+#X connect 1 0 5 0;
+#X connect 2 0 3 0;
+#X connect 3 0 6 0;
+#X connect 4 0 3 0;
+#X connect 4 1 3 2;
+#X connect 5 0 3 0;
+#X connect 5 1 3 1;
+#X connect 8 0 9 0;
+#X connect 8 0 10 0;
+#X connect 9 0 0 0;
+#X connect 9 0 1 0;
+#X connect 9 0 2 0;
+#X connect 10 0 3 0;
+#X coords 0 -1 1 1 80 170 2 50 50;
+#X restore 243 137 pd label;
+#X text 91 166 Open subpatches for the conversion ====>, f 20;
+#X msg 282 374 color -1.48034e+007 -1 -1;
+#N canvas 574 194 328 335 pack 0;
+#X obj 73 47 inlet;
+#X obj 206 47 inlet;
+#X msg 73 152 color \$1 \$2 \$3;
+#X obj 206 85 t b f;
+#X obj 73 123 pack float -1 -1, f 24;
+#X obj 73 187 list prepend set;
+#X obj 73 213 list trim;
+#X obj 73 246 t b a;
+#X obj 73 283 outlet;
+#X connect 0 0 4 0;
+#X connect 1 0 3 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 3 1 4 2;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 1 8 0;
+#X restore 282 338 pd pack;
+#X f 8;
+#X obj 46 355 cnv 15 200 60 empty \$0-colors-old-way Label 35 30 0
+40 -233017 -1 0;
+#X obj 282 410 send \$0-colors-old-way;
+#X text 93 22 The RGB color scheme can also be encoded \, for backwards
+compatibility \, as negative inetegers. For "R" (red) \, "G" (green)
+& "B" (blue) values from 0 to 255 \, the conversion formula is \; float
+= -(R * 65536 + G * 256 + B + 1)., f 47;
+#X connect 0 0 5 1;
+#X connect 2 0 5 0;
+#X connect 4 0 7 0;
+#X connect 5 0 4 0;
+#X restore 64 542 pd old_way;
+#X text 29 481 open subpatch below for the old way of encoding RGB
+values., f 20;
+#X text 30 463 See also:;
+#X text 58 18 The 'color' message takes a list of three values \, but
+only the first and the third are valid and set \, respectively \, background
+and label colors (as there's no "front" color \, the 2nd value is ignored).
+, f 76;
+#X text 58 65 Integers from 0 to 29 represent the 30 preset colors
+found in the properties window \, values above are wraped. Negative
+integers were used to encode RGB values (and that still works for backwards
+compatibility). But since Pd 0.47-0 \, you can set colors with hexadecimal
+RGB symbol values \, which are followed by "#"., f 76;
+#X symbolatom 625 376 9 0 0 0 - - -;
+#N canvas -8 -8 1366 685 label 0;
+#X obj 174 436 t b f;
+#X obj 124 80 vsl 15 128 1 0 0 0 empty empty empty 0 -9 0 10 -1 -262144
+-1 0 1;
+#X obj 102 260 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -8256
+-262144 -1 0 1;
+#X obj 109 430 t b f;
+#X obj 81 260 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4033
+-1 -1 0 1;
+#X obj 61 260 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -258049
+-1 -1 0 1;
+#X obj 81 455 t b f;
+#X obj 221 462 makefilename %02x;
+#X obj 141 489 makefilename %02x;
+#X obj 61 526 makefilename %02x;
+#X obj 61 608 outlet;
+#X text 52 56 background;
+#X msg 61 585 symbol #\$1\$2\$3;
+#X obj 176 59 loadbang;
+#X obj 176 356 route set;
+#X obj 61 556 pack symbol symbol symbol;
+#X obj 300 72 cnv 15 100 60 empty empty empty 20 12 0 14 -233017 -66577
+0;
+#X obj 176 90 t b b;
+#X obj 115 402 *;
+#X obj 81 402 *;
+#X obj 61 500 *;
+#X symbolatom 267 394 10 0 0 0 - - -;
+#X msg 239 130 1;
+#X obj 102 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -159808
+-262144 -1 12700 1;
+#X obj 81 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -257985
+-1 -1 0 1;
+#X obj 61 80 vsl 15 128 0 255 0 0 empty empty empty 0 -9 0 10 -4032
+-1 -1 0 1;
+#X obj 11 225 t f f;
+#X obj 56 225 t f f;
+#X obj 102 226 t f f;
+#X msg 176 131 225;
+#X floatatom 20 521 5 0 0 0 - - -;
+#X floatatom 25 444 5 0 0 0 - - -;
+#X floatatom 217 397 5 0 0 0 - - -;
+#X floatatom 243 223 5 0 0 0 - - -;
+#X connect 0 0 18 0;
+#X connect 0 0 19 0;
+#X connect 0 0 20 0;
+#X connect 0 1 18 1;
+#X connect 0 1 19 1;
+#X connect 0 1 20 1;
+#X connect 1 0 0 0;
+#X connect 2 0 18 0;
+#X connect 3 0 4 0;
+#X connect 3 1 7 0;
+#X connect 4 0 19 0;
+#X connect 5 0 20 0;
+#X connect 6 0 5 0;
+#X connect 6 1 8 0;
+#X connect 7 0 15 2;
+#X connect 8 0 15 1;
+#X connect 9 0 15 0;
+#X connect 12 0 10 0;
+#X connect 12 0 21 0;
+#X connect 13 0 17 0;
+#X connect 14 0 7 0;
+#X connect 14 0 8 0;
+#X connect 15 0 12 0;
+#X connect 17 0 29 0;
+#X connect 17 1 22 0;
+#X connect 18 0 3 0;
+#X connect 18 0 32 0;
+#X connect 19 0 6 0;
+#X connect 19 0 31 0;
+#X connect 20 0 9 0;
+#X connect 20 0 30 0;
+#X connect 22 0 1 0;
+#X connect 23 0 28 0;
+#X connect 23 0 33 0;
+#X connect 24 0 27 0;
+#X connect 25 0 26 0;
+#X connect 26 0 2 0;
+#X connect 26 1 4 0;
+#X connect 27 0 5 0;
+#X connect 27 1 4 0;
+#X connect 28 0 5 0;
+#X connect 28 1 2 0;
+#X connect 29 0 14 0;
+#X connect 29 0 25 0;
+#X connect 29 0 24 0;
+#X connect 29 0 23 0;
+#X coords 0 -1 1 1 100 170 2 50 50;
+#X restore 625 165 pd label;
+#X text 636 140 Set CYMK values in the sliders;
+#X text 356 140 Set RGBK values in the sliders;
+#X connect 0 0 20 0;
+#X connect 1 0 3 0;
+#X connect 3 0 20 0;
+#X connect 3 1 20 2;
+#X connect 4 0 18 0;
+#X connect 6 0 10 0;
+#X connect 7 0 6 0;
+#X connect 8 0 12 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 10 1 12 2;
+#X connect 11 0 19 0;
+#X connect 12 0 13 0;
+#X connect 13 0 18 0;
+#X connect 19 0 12 0;
+#X connect 20 0 4 0;
+#X connect 28 0 12 0;
+#X connect 29 0 28 0;
